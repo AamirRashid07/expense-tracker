@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #14162b;
+}
+
+.heading {
+    text-align: center;
+    color: aliceblue;
+}
+
+.tagline {
+    text-align: center;
+    padding: 2px;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cards {
+    display: block;
+    width: 300px;
+    height: 180px;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    border: none;
+}
+
+.cards h3 {
+    font-size: 24px;
+}
+
+.cards p {
+    font-size: 36px;
+    padding-top: 10px;
+}
+
+
+.balance-card {
+    background-color: rgb(108, 108, 198);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.balance-card:hover {
+    background-color: rgb(34, 34, 105);
+}
+
+.income-card {
+    background-color: rgb(106, 209, 106);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.income-card:hover {
+    background-color: rgb(19, 61, 19);
+    cursor: pointer;
+}
+
+.expense-card {
+    background-color: rgb(198, 82, 82);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.expense-card:hover {
+    background-color: rgb(110, 30, 39);
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form .transactions {
+    /* border: 1px solid black; */
+    margin: 10px;
+    width: 100%;
+    max-width: 480px;
+    height: 350px;
+}
+
+.transactions h2 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.details-transactions {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.details-transactions label {
+    color: rgb(196, 217, 234);
+    font-size: 18px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 10px;
+    background: #c6b3b3;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    box-shadow: 2px 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.btn-submit {
+    display: flex;
+    width: 35%;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    margin: 15px auto;
+    border: none;
+    background-color: rgb(82, 82, 159);
+    box-shadow: 2px 0 6px rgba(255, 255, 255, 0.3);
+    transition: 0.2s ease-in;
+}
+
+.btn-submit:hover {
+    background-color: rgb(36, 36, 133);
+}
+
+.list h2 {
+    color: aliceblue;
+}
+
+.li-transactions {
+    font-size: 20px;
+    padding: 5px;
+    color: rgb(255 , 255, 255);
+}
+
+.li-delBtn {
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(93, 58, 235);
+    color: #fff;
+}
+
+.li-delBtn:hover {
+    background-color: rgb(16, 4, 64);
+}
+
+#invalid-msg {
+    color: #fff;
+    font-size: 20px;
+}

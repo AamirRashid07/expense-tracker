@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="heading">Expense Tracker</h1>
+            <p class="tagline">Track and manage all your expenses.</p>
+    </header>
+
+    <section class="cards-section">
+        <div class="container">
+            <div class="cards balance-card">
+                <h3>Balance :</h3>
+                <p id="balance">₹0</p>
+            </div>
+            <div class="cards income-card">
+                <h3>Income :</h3>
+                <p id="income">₹0</p>
+            </div>
+            <div class="cards expense-card">
+                <h3>Expense :</h3>
+                <p id="expense">₹0</p>
+            </div>
+        </div>
+    </section>
+
+    <form id="form-transactions">
+        <div class="transactions">
+            <h2>Add Transactions</h2>
+            <div class="details-transactions">
+                <label for="description">Description</label>
+                <input type="text" name="description" id="description">
+
+                <label for="amount">Amount </label>
+                <input type="number" name="amount" id="amount">
+
+                <label for="amount-type">Type</label>
+                <select name="amount-type" id="amount-type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button id="btn-submit" class="btn-submit">Add Transaction</button>
+                <p id="invalid-msg">
+
+                </p>
+            </div>
+        </div>
+    </form>
+
+    <section id="transactions-list" class="list">
+        <h2>Transactions</h2>
+        <ul id="unordered-list">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
